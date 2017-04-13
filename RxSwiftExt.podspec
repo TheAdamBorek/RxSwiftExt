@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxSwiftExt"
-  s.version      = "2.3.0"
+  s.version      = "2.4.0"
   s.summary      = "RxSwift operators not found in the core distribtion"
   s.description  = <<-DESC
     A collection of operators for RxSwift adding commonly requested operations not found in the core distribution
@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
   s.subspec "Core" do |cs|
     cs.source_files  = "Source/RxSwift"
     cs.frameworks  = "Foundation"
-    cs.dependency "RxSwift", '~> 3.0'
+    cs.dependency "RxSwift", '~> 3.4.0'
   end
 
   s.subspec "RxCocoa" do |co|
     co.source_files  = "Source/RxCocoa"
     co.frameworks  = "Foundation"
-    co.dependency "RxCocoa", '~> 3.0'
+    co.dependency "RxCocoa", '~> 3.4.0'
     co.dependency "RxSwiftExt/Core"
   end
 
